@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Magenuts_SmartSearch::smartadmin" title="Smart Search" sortOrder="50">
+                </resource>
+                <resource id="Magento_Backend::stores">
+                    <resource id="Magento_Backend::stores_settings">
+                        <resource id="Magento_Config::config">
+                            <resource id="Magenuts_SmartSearch::config_smart" title="FAQ Section" sortOrder="80"/>
+                        </resource>
+                    </resource>
+                </resource>
+            </resource>
+        </resources>
+    </acl>
+</config>

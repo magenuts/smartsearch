@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <system>
+        <section id="smart_search" translate="label" type="text" sortOrder="150" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <label>Smart Search</label>
+            <tab>magenuts</tab>
+            <resource>Magenuts_SmartSearch::config_smart</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>General Options</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

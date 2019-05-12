@@ -1,0 +1,115 @@
+/** ================================================================
+  *                         SMARTSEARCH
+  * ============================================================= */
+#search.loading {
+
+}
+#search_autocomplete {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.search-autocomplete ul {
+  margin-top: 35px;
+}
+.c-smartsearch {
+  
+}
+.c-smartsearch__overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 998;
+}
+.c-smartsearch__wrapper {
+  position: absolute;
+  width: 100%;
+  top: 44px;
+  z-index: 999;
+  left: 0px;
+  border: 1px solid #ededed;
+  box-shadow: 0px 1px 4px 0px #ededed;
+  background: #FFFFFF;
+}
+.c-smartsearch__wrapper--inner {
+  width: 100%;
+  margin: 0 auto;
+}
+.c-smartsearch__content {
+  background-color: white;
+}
+.c-smartsearch__product {
+  border-top: 1px solid #f2f2f2;
+  padding: 15px 15px;
+  margin-top:35px;
+}
+.c-smartsearch__title {
+  text-decoration: none;
+  float: left;
+  clear: both;
+  width: 100%;
+  text-transform: initial;
+}
+.c-smartsearch {
+  .c-smartsearch__sale--accent {
+    color: #3a3a3a;
+  }
+  .c-smartsearch__price {
+    float: left;
+    width: 100%;
+    > span {
+      padding-right: 2px;
+    }
+  }
+  .u-strike-through {
+    text-decoration: line-through;
+  }
+  .col-8-8 {
+    width: 100%;
+    float: left;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .col-2-8 {
+    width: 15%;
+    float: left;
+    margin-right: 3%;
+  }
+  .col-6-8 {
+    width: 80%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .c-smartsearch__wrapper--inner {
+    max-width: 100% !important;
+  }
+
+  .c-smartsearch__wrapper {
+    top: 50px !important;
+  }
+
+  .c-smartsearch__image {
+    text-align: center;
+
+    img {
+      max-height: 150px;
+      width: auto;
+    }
+  }
+}
+.search-autocomplete ul:not(:empty) {
+  background: #ffffff;
+  border: 1px solid #c2c2c2;
+  border-top: 0;
+  width: 340px;
+  height: auto;
+  margin-left: -75px;
+}
