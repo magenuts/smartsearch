@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <menu>
+        <add id="Magenuts_SmartSearch::smartadmin" title="Smart Search" module="Magenuts_SmartSearch" sortOrder="20"
+             parent="Magenuts_Core::menu" dependsOnModule="Magenuts_SmartSearch" resource="Magenuts_SmartSearch::smartadmin"/>
+        <add id="Magenuts_SmartSearch::settings"
+             title="Settings"
+             module="Magenuts_SmartSearch"
+             sortOrder="10"
+             resource="Magenuts_SmartSearch::settings"
+             action="adminhtml/system_config/edit/section/smart_search"
+             parent="Magenuts_SmartSearch::smartadmin"/>
+    </menu>
+</config>
